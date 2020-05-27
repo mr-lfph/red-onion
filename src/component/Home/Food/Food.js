@@ -6,7 +6,7 @@ import { useContext } from 'react';
 //import FoodItem from '../FoodItem/FoodItem'
 
 const Food=(props)=> {
-    const { cart,setCart,user}=useContext(UserContext)
+    const { cart,setCart,user}=useContext()//UserContext
 
     const [activeCategories,setActiveCategories]=useState(
         {
