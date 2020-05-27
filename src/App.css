@@ -1,9 +1,20 @@
-.primary-btn{
-  background-color: red;
+.primary-btn {
+  background-color: rgb(212, 78, 78);
   color: white;
-  border-radius: 5px;
+  border-radius: 30px;
   padding: 7px 25px;
   font-size: 18px;
 }
 
+.primary-btn:hover {
+  color: white;
+  background-color: red;
+}
 
+
+ul li {
+  list-style: none;
+}
+.gs{
+  color: green;
+}

@@ -1,0 +1,9 @@
+
+ .active {
+    border-bottom: 2px solid red;
+    color: red;
+  }
+  .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }

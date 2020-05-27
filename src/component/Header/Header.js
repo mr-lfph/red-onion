@@ -18,19 +18,16 @@ const Header = () => {
                 <div className="col">
                     <div className="header-right">
                         <div className="d-flex">
-                            <p>LoginUser</p>
+                            <button className="signup-btn">Sign Up</button>
+                            <button className="login-btn">Log In</button>
                             <button className="btn">
-                                <i className="fa .fa-cart-plus" aria-hidden="true">
-                                    <i><span style={{ color: 'red' }}> Cart & Cart Item</span></i>
-                                </i>
-
+                                <i className="fa fa-cart-plus" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     )
 }
 

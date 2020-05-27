@@ -12,6 +12,34 @@ img{
 .header-right div.d-flex button {
 	margin: 15px;
 }
+.login-btn{
+	color: rgb(212, 78, 78);
+	border: none;
+	background-color: white;
+	padding: 5px 20px;
+	border-radius: 10px;
+
+	
+}
+.login-btn:hover{
+	color:white;
+	border: none;
+	background-color:red;
+	border-radius: 10px;
+	padding: 5px 20px;
+	
+}
+.signup-btn {
+	color: white;
+	background-color: rgb(212, 78, 78);
+	border-radius: 10px;
+	padding: 5px 20px;
+
+}
 .signup-btn:hover {
 	color: #fff;
+	background-color:red;
+	border-radius: 10px;
+	padding: 5px,20px;
+
 }
