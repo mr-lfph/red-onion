@@ -1,19 +1,18 @@
 import React from 'react'
 import {withRouter} from 'react-router-dom'
-
+import '../../../App.css';
 
 const FoodItem=(props)=> {
-    const {title,subtitle,id,img,price}=props;
-    return (
-        <div className="col-xl-4">
-           <h2>Food Items</h2>
-           <div className="single-item text-center m-4">
+     const {title,img,subtitle,price,_id}=props.item;
+   return (
+        <div className="col-xl-4" onClick={()=>props.history.push(`/foods/${_id}`)}>
+          <div className="single-item text-center m-4">
                <div className="card p-4" >
-                   <img src={img} className="card-img-top" alt=""/>
-                   <div className="card-body">card Body
-                    <h5 className="card-title">{title}Title</h5>
-                    <p className="card-text">{subtitle}SubTitle</p>
-                    <h4 className="price">{price}price</h4>
+                <img src={img} className="card-img-top" alt=""/>
+                   <div className="card-body">
+                    <h6 className="card-title">{title}</h6>
+                    <p className="card-text">{subtitle}</p>
+                    <h5 className="price">${price}</h5>
                    </div>
                </div>
            </div>

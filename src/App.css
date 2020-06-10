@@ -1,3 +1,6 @@
+.btn:hover {
+  color: #da0839;
+}
 .primary-btn {
   background-color: rgb(212, 78, 78);
   color: white;
@@ -18,3 +21,46 @@ ul li {
 .gs{
   color: green;
 }
+p.see-all {
+  cursor: pointer;
+  transition: .3s;
+}
+p.see-all:hover {
+  border-bottom: 1px solid salmon;
+}
+.single-item {
+  transition: .5s;
+  cursor: pointer;
+}
+
+.single-item:hover {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.card {
+  border: none;
+}
+
+.card-body {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.checkout-btn {
+  background-color: #e51a4b;
+  color: #fff;
+  padding: 6px 50px;
+  border-radius: 5px;
+}
+.checkout-btn:hover {
+  color: #fff;
+}
+.active {
+  border-bottom: 2px solid #e51a4b;
+  color: #e51a4b;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
