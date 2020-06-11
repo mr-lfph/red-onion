@@ -7,6 +7,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './component/Home/Home';
 import NotFound from './component/NotFound/NotFound';
+import Foods from './component/Home/Food/Food';
+import FoodDetails from './component/Home/FoodDetails/FoodDetails';
 
 
 function App() {
@@ -18,9 +20,11 @@ function App() {
         <Route exact path="/home">
           <Home></Home>
         </Route>
+        <Route exact path="/foods/" component={Foods} />
+        <Route path="/foods/:id" component={FoodDetails} />
         <Route path="*">
              <NotFound></NotFound>
-            </Route>
+         </Route>
       </Switch>
     </Router>
     </div>

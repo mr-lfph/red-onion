@@ -4,6 +4,8 @@ import '../../../App.css';
 
 const FoodItem=(props)=> {
      const {title,img,subtitle,price,_id}=props.item;
+     console.log('history',props.history);
+     
    return (
         <div className="col-xl-4" onClick={()=>props.history.push(`/foods/${_id}`)}>
           <div className="single-item text-center m-4">
