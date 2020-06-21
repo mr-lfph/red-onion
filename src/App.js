@@ -9,6 +9,7 @@ import Home from './component/Home/Home';
 import NotFound from './component/NotFound/NotFound';
 import Foods from './component/Home/Food/Food';
 import FoodDetails from './component/Home/FoodDetails/FoodDetails';
+import Login from './component/Login/Login';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/home">
           <Home></Home>
         </Route>
+        <Route path="/Login" component={Login}></Route>
         <Route exact path="/foods/" component={Foods} />
         <Route path="/foods/:id" component={FoodDetails} />
         <Route path="*">
