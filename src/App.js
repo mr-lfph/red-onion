@@ -12,6 +12,13 @@ import FoodDetails from './component/Home/FoodDetails/FoodDetails';
 import Login from './component/Login/Login';
 
 
+
+import TestS from './component/TestS/TestS';
+import Register from './component/Signup/Signup';
+
+
+
+
 function App() {
   return (
     <div>
@@ -24,10 +31,16 @@ function App() {
         <Route path="/Login" component={Login}></Route>
         <Route exact path="/foods/" component={Foods} />
         <Route path="/foods/:id" component={FoodDetails} />
+        <Route path="/testS" component={TestS}></Route>
+        <Route path="/Signup" component={Register}>
+          {/* <Register></Register> */}
+         </Route>
         <Route path="*">
              <NotFound></NotFound>
          </Route>
-      </Switch>
+         <Route path="/Login">Login</Route>
+         
+          </Switch>
     </Router>
     </div>
   );
